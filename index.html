@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Games Hub - Play Wordle & More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Word Games Hub</h1>
+        <p>Challenge your vocabulary with our collection of word games!</p>
+    </header>
+
+    <main>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-box">
+                <h2>🚀 Want Unlimited Wordle?</h2>
+                <p>Play endless Wordle puzzles without daily limits!</p>
+                <a href="https://wordleunlimitedunblocked.com/" target="_blank" rel="dofollow" class="cta-button">
+                    Play Wordle Unlimited →
+                </a>
+            </div>
+        </section>
+
+        <!-- Game Selection -->
+        <section class="games-section">
+            <h2>Choose Your Game</h2>
+            <div class="games-grid">
+                <div class="game-card active" data-game="wordle">
+                    <h3>🎯 Classic Wordle</h3>
+                    <p>Guess the 5-letter word in 6 tries</p>
+                </div>
+                <div class="game-card" data-game="word-scramble">
+                    <h3>🔤 Word Scramble</h3>
+                    <p>Unscramble the letters to form words</p>
+                </div>
+                <div class="game-card" data-game="word-chain">
+                    <h3>🔗 Word Chain</h3>
+                    <p>Create a chain of connected words</p>
+                </div>
+                <div class="game-card" data-game="anagram">
+                    <h3>🎭 Anagram Solver</h3>
+                    <p>Find all possible words from letters</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wordle Game -->
+        <section id="wordle-game" class="game-container active">
+            <div class="game-header">
+                <h3>Classic Wordle</h3>
+                <button id="new-wordle-game" class="new-game-btn">New Game</button>
+            </div>
+            <div id="wordle-board" class="wordle-board"></div>
+            <div class="keyboard" id="keyboard"></div>
+            <div id="wordle-message" class="message"></div>
+        </section>
+
+        <!-- Word Scramble Game -->
+        <section id="word-scramble-game" class="game-container">
+            <div class="game-header">
+                <h3>Word Scramble</h3>
+                <button id="new-scramble-game" class="new-game-btn">New Word</button>
+            </div>
+            <div class="scramble-container">
+                <div id="scrambled-word" class="scrambled-word"></div>
+                <input type="text" id="scramble-input" class="game-input" placeholder="Type your answer...">
+                <button id="check-scramble" class="check-btn">Check Answer</button>
+            </div>
+            <div id="scramble-message" class="message"></div>
+        </section>
+
+        <!-- Word Chain Game -->
+        <section id="word-chain-game" class="game-container">
+            <div class="game-header">
+                <h3>Word Chain</h3>
+                <button id="new-chain-game" class="new-game-btn">New Chain</button>
+            </div>
+            <div class="chain-container">
+                <div id="chain-words" class="chain-words"></div>
+                <input type="text" id="chain-input" class="game-input" placeholder="Enter next word...">
+                <button id="add-chain-word" class="check-btn">Add Word</button>
+            </div>
+            <div id="chain-message" class="message"></div>
+        </section>
+
+        <!-- Anagram Game -->
+        <section id="anagram-game" class="game-container">
+            <div class="game-header">
+                <h3>Anagram Solver</h3>
+                <button id="new-anagram-game" class="new-game-btn">New Letters</button>
+            </div>
+            <div class="anagram-container">
+                <div id="anagram-letters" class="anagram-letters"></div>
+                <input type="text" id="anagram-input" class="game-input" placeholder="Form a word...">
+                <button id="check-anagram" class="check-btn">Check Word</button>
+                <div id="found-words" class="found-words">
+                    <h4>Found Words:</h4>
+                    <div id="words-list"></div>
+                </div>
+            </div>
+            <div id="anagram-message" class="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Word Games Hub. Challenge your mind daily!</p>
+        <p><a href="https://wordleunlimitedunblocked.com/" target="_blank" rel="dofollow">Play More at Wordle Unlimited</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
